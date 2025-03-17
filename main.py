@@ -1,6 +1,6 @@
 import cv2
 from ultralytics import YOLO
-from scripts.maping import material_mapping
+from scripts.mapping import material_mapping
 
 # Carrega o modelo treinado
 model = YOLO("best.pt")
