@@ -1,9 +1,9 @@
 import cv2
 from ultralytics import YOLO
-from maping import material_mapping
+from scripts.maping import material_mapping
 
 # Carrega o modelo treinado
-model = YOLO("../runs/detect/train17/weights/best.pt")
+model = YOLO("best.pt")
 
 # Inicia a captura de vídeo pela webcam
 cap = cv2.VideoCapture(0)
@@ -26,9 +26,9 @@ while cap.isOpened():
             conf = float(box.conf)
             if conf > 0.5:
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
-                cv2.putText(frame, f"{material} {conf * 100:.1f}%", (x1, y1 - 10),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)  # Texto preto
+                cv2.putText(frame, f"{material} {conf * 100:.1f}%", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2) 
 
+    
     cv2.imshow("Detecção", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
