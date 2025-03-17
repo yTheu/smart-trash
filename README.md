@@ -1,50 +1,47 @@
-# Smart Trash
+# ♻️ Smart Trash
 
-O projeto Smart Trash utiliza um modelo de detecção de objetos para identificar e classificar diferentes tipos de materiais recicláveis em tempo real usando a webcam.
+O **Smart Trash** é um projeto que utiliza um modelo de detecção de objetos baseado em **YOLO** para identificar e classificar diferentes tipos de materiais recicláveis em tempo real, usando a webcam.
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
+- `best.pt` — Arquivo do modelo treinado.
+- `main.py` — Script principal que executa a detecção de objetos.
+- `scripts/maping.py` — Mapeamento de materiais para suas respectivas categorias.
 
-- `best.pt`: Arquivo do modelo treinado.
-- `main.py`: Script principal que executa a detecção de objetos.
-- `scripts/maping.py`: Mapeamento de materiais para suas respectivas categorias.
-
-## Dependências
+## 📦 Dependências
 
 - Python 3.x
 - OpenCV
 - Ultralytics YOLO
 
-## Instalação
+## ⚙️ Instalação
 
 1. Clone o repositório:
-
-    ```sh
-    git clone https://github.com/yTheu/smart-trash/
-    cd smart-trash
-    ```
+   ```bash
+   git clone https://github.com/yTheu/smart-trash
+   cd smart-trash
+   ```
 
 2. Instale as dependências:
+   ```bash
+   pip install opencv-python ultralytics
+   ```
 
-    ```sh
-    pip install opencv-python ultralytics
-    ```
+## ▶️ Como Usar
 
-## Uso
+Execute o script principal:
+```bash
+python main.py
+```
 
-1. Coloque o arquivo do modelo treinado `best.pt` na raiz do projeto.
-2. Execute o script principal:
+A janela de vídeo será exibida com a detecção de objetos em tempo real.  
+Pressione `q` para encerrar a execução.
 
-    ```sh
-    python main.py
-    ```
+## 🤝 Contribuições
 
-3. A detecção de objetos será exibida em uma janela de vídeo. Pressione `q` para sair.
+Contribuições são bem-vindas!  
+Sinta-se à vontade para abrir **issues** ou enviar **pull requests** com melhorias.
 
-## Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
-
-## Licença
+## 📄 Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
