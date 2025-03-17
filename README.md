@@ -2,6 +2,8 @@
 
 O **Smart Trash** é um projeto que utiliza um modelo de detecção de objetos baseado em **YOLO** para identificar e classificar diferentes tipos de materiais descartados em tempo real, usando a webcam.
 
+> ⚠️ Este projeto está em desenvolvimento e, futuramente, será integrado a um sistema físico com **Arduino**, formando uma **lixeira inteligente automatizada**, onde **a abertura da tampa será controlada conforme o tipo de material identificado** — por exemplo, se alguém tentar descartar papel em um compartimento destinado a orgânicos, a tampa não será aberta.
+
 ## 📁 Estrutura do Projeto
 
 - `best.pt` — Arquivo do modelo treinado.
@@ -36,6 +38,7 @@ python main.py
 
 A janela de vídeo será exibida com a detecção e classificação dos materiais em tempo real.  
 Pressione `q` para encerrar a execução.
+
 
 ## 🤝 Contribuições
 
