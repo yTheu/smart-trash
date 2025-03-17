@@ -1,6 +1,0 @@
-train: images  # Caminho relativo para as imagens de treino
-val: images # Caminho relativo para as imagens de validação
-
-nc: 6 
-
-names: ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash'] 
