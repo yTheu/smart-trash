@@ -40,8 +40,4 @@ Pressione `q` para encerrar a execução.
 ## 🤝 Contribuições
 
 Contribuições são bem-vindas!  
-Sinta-se à vontade para abrir **issues** ou enviar **pull requests** com melhorias.
-
-## 📄 Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
+Sinta-se à vontade para enviar **pull requests** com melhorias.
