@@ -20,7 +20,7 @@ O projeto Smart Trash utiliza um modelo de detecção de objetos para identifica
 1. Clone o repositório:
 
     ```sh
-    git clone [<URL_DO_REPOSITORIO>](https://github.com/yTheu/smart-trash/)
+    git clone https://github.com/yTheu/smart-trash/
     cd smart-trash
     ```
 
